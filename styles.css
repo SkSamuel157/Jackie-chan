@@ -1,0 +1,241 @@
+/* Garantir que o gradiente cubra toda a altura da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, rgba(204, 214, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background-attachment: fixed; /* Fixar o fundo para que ele não role com o conteúdo */
+}
+
+/* Seção sojackie para o fundo */
+.sojackie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1000px;
+    height: 582px;
+    background-image: url(jackie-chan.png);
+    background-size: auto 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Estilizar e posicionar o cabeçalho */
+header {
+    position: fixed; /* Fixar o cabeçalho */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 3; /* Para estar acima dos outros conteúdos */
+}
+
+header .logo img {
+    width: 85px;
+    height: 85px;
+    margin-right: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Ajustar o espaçamento para não sobrepor o cabeçalho */
+body {
+    padding-top: 100px; /* Ajuste conforme a altura do cabeçalho */
+}
+
+/* Estilizar a linha divisória */
+.divider {
+    border: none;
+    border-top: 6px solid #21388E;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 1; /* Definindo z-index menor que o do cabeçalho */
+}
+
+/* Definir a imagem do Jackie Chan como fundo da seção .hero */
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    z-index: 2;
+}
+
+.hero-text {
+    max-width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #21388E;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    padding: 10px 20px;
+    background-color: #21388E;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ajustes nas notícias */
+.news {
+    padding: 40px 20px;
+}
+
+.news h2 {
+    font-size: 2em;
+    color: #21388E;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.news-content {
+    max-width: 60%;
+    text-align: left;
+}
+
+.news-content p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin-right: 50px;
+}
+
+.footer-links h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    max-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    margin-right: 15px;
+}
+
+.social-links li img {
+    max-width: 20px;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.subscribe button {
+    padding: 10px;
+    background-color: #2C2F7B;
+    color: #FFF;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #1A1B61;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}

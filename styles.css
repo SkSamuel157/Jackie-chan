@@ -31,7 +31,6 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
     z-index: 3; /* Para estar acima dos outros conteúdos */
 }
 
